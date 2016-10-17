@@ -6,11 +6,12 @@ body {
 }
 
 .heading {
+    top: 0;
+    margin: 0;
     background-color: black;
 	position: absolute;
-    height: 60px ;
+    height: 10%;
     width: 100%;
-    top: 0;
 }
 .heading h2 {
 	font: 15px arial, sans-serif;
@@ -20,18 +21,18 @@ body {
 }
 .background-container {
 	width: 100%;
-	top: 60px;
+	height: 90%;
+	top: 10%;
+	position: absolute;
 	margin: 0;
-	background-color: rgba(128,128,128,0.1);
-	background-image: url(desktop.jpg);
-	background-repeat: no-repeat
-    background-size: cover;
-	position: relative;
+	background: rgba(155, 135, 135, 0.2) url(desktop.jpg) no-repeat; 
+	background-size: cover;
+	z-index: -1;  
 }
 .img-headshot{
-	width: 20%;
+	width: 26%;
 	height: auto;
 	position: absolute;
-	left: 40%;
-	top: 20%;
+	left: 37%;
+	top: 10%;
 }
