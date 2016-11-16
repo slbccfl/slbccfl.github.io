@@ -8,6 +8,7 @@ body {
 .heading {
     top: 0;
     margin: 0;
+    padding: 0;
     background-color: black;
 	position: absolute;
     height: 10%;
@@ -19,17 +20,26 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+.heading .btn-default {
+	font: 15px arial, sans-serif;
+    text-transform: uppercase;
+    align: center;
+}
 .background-container {
 	width: 100%;
 	height: 90%;
 	top: 10%;
 	position: absolute;
 	margin: 0;
-	background: rgba(155, 135, 135, 0.2) url(desktop.jpg) no-repeat; 
+	background: rgba(155, 135, 135, 0.2) url(hollywoodbroadwalk.jpg) no-repeat; 
 	background-size: cover;
 	z-index: -1;  
 }
+h1 {
+	float: right;
+}
 .img-headshot{
+    border-radius: 50%;
 	width: 26%;
 	height: auto;
 	position: absolute;
