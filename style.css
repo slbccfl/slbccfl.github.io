@@ -65,12 +65,12 @@ h1 {
 	float: right;
 }
 .main-cell {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: auto;
-  top: 0;
-  bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	top: 0;
+	bottom: 0;
 }
 .img-headshot{
     border-radius: 50%;
