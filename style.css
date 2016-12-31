@@ -1,4 +1,5 @@
-body {
+body, 
+embed {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -14,6 +15,7 @@ h6 {
     font-family: 'arial', sans-serif;
     font-weight: 700;
 }
+embed,
 .container {
 	position: absolute;
 }
@@ -65,4 +67,27 @@ h1 {
 	width: 80%;
 	height: auto;
 	position: absolute;
+}
+.banner {
+	position: fixed;
+	bottom: 0;
+    padding: 20px 0;
+    color: #f8f8f8;
+    background: linear-gradient(rgba(0, 47, 75, 0.4), rgba(220, 66, 37, 0.2)), 
+                url(hollywoodbroadwalk.jpg);
+    background-size: cover;
+}
+.banner ul {
+    margin-bottom: 0;
+}
+.social_button {
+    display: inline-block;
+    margin-left: 35%;
+}
+.social_button a:hover {
+    color: #777;
+}
+.social_icon_style {
+    color: #f8f8f8;
+    font-size: 1.2em;
 }
