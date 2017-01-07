@@ -33,7 +33,7 @@ embed,
 	top: 70px;
 	bottom: 0;
 	background: url(hollywoodbroadwalk.jpg) no-repeat; 
-	background-size: contain;
+	background-size: cover;
 	z-index: -1;  
 }
 
@@ -61,20 +61,33 @@ embed,
 .navbar-collapse {
 	top: 15px;
 }
-h1 {
-	float: right;
-}
 .main-cell {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: 500px;
 	top: 0;
 	bottom: 0;
 }
-.img-headshot{
+.img-headshot {
     border-radius: 50%;
-	width: 80%;
+	left: 40%;
+	width: 20%;
 	height: auto;
 	position: absolute;
 }
+.about-button:active {
+	color: white;
+}
+.about-region {
+	display: none;
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	width: 50%;
+	height: 80%;
+	padding: 20px;
+	background-color: white;
+	opacity: 0.8;
+    border-radius: 10%;
+}
+
