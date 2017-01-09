@@ -1,0 +1,419 @@
+/*web_photography_contact.css*/
+
+@import 'https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Raleway';
+
+/* PRESETS ____________________________________________________________________*/
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+}
+a {
+    color: #987067;
+    font-weight: 900;
+    }
+a:hover {
+    text-decoration: none;
+}
+
+/* WEB WORK ____________________________________________________________________*/
+.web_work_background {
+	padding-top: 50px;
+	background: linear-gradient(rgba(0, 47, 75, 0.3), rgba(220, 66, 37, 0.3));
+	width: 100vw;
+	height: 100vw;
+}
+.table-responsive {
+    border: none;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+td {
+    margin: 8px;
+    color: white;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td,
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    padding:0;
+}
+
+.web_work_links {
+    display: inline-block;
+}
+
+.hovereffect {
+  width: 30%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 83%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #ad8d86;
+    /*border-top: 1px solid #FFF;*/
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+.hovereffect:hover img.medium_filter {
+    -webkit-filter: blur(10px) brightness(130%) opacity(90%);
+    filter: blur(10px) brightness(130%) opacity(90%);
+}
+
+.hovereffect:hover img.dark_filter {
+    -webkit-filter: blur(10px) brightness(250%) opacity(60%);
+    filter: blur(10px) brightness(250%) opacity(60%);
+}
+
+.hovereffect h2 {
+    font-family: 'Lobster', cursive;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(183,155,149,1);
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-align: left;
+    position: relative;
+    font-size: 2.7vw;
+    background-color: transparent;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}
+
+.hovereffect p {
+    font-family: 'Arimo', sans-serif;
+    text-transform: lowercase;
+    font-size: 0.7vw;
+    font-weight: 300;
+    line-height: 141%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #777;
+    /*text-shadow: 2px 2px #ff0000;*/
+    padding-left: 12%;
+    padding-right: 12%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+     transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover .web_work_about, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* WEB WORK MEDIA QUERIES__________________________________________________________*/
+@media(max-width:768px) {
+    .table-responsive>.table>tbody>tr>td, 
+    .table-responsive>.table>tbody>tr>th, 
+    .table-responsive>.table>tfoot>tr>td, 
+    .table-responsive>.table>tfoot>tr>th, 
+    .table-responsive>.table>thead>tr>td, 
+    .table-responsive>.table>thead>tr>th {
+        white-space: normal;
+    }
+    .web_work_boxes {
+        display: block;
+        width: 90%;
+        margin: 5%;
+    }
+	.web_work_background {
+    	padding-top: 50px;
+    	background: linear-gradient(rgba(0, 47, 75, 0.3), rgba(220, 66, 37, 0.3));
+    	width: 100vw;
+    	height: 100%;
+        overflow: auto;
+	}
+    .table-responsive {
+        margin-left: -5%;
+        height: 100%;
+        overflow: scroll;
+    }
+    .hovereffect {
+        width: 100%;
+    }
+    .hovereffect h2 {
+        font-size: 3.3em;
+        margin-left: 7%;
+    }
+    .hovereffect p {
+        font-size: 2vw;
+        font-weight: 400;
+        text-shadow: 0.1px 0.1px 0.4px #ebebeb;
+        padding-left: 7%;
+    }
+}
+@media(max-width:414px) {
+    .web_work_boxes {
+        width: 100%;
+        display: block;
+    }
+	.web_work_background {
+    	padding-top: 50px;
+    	background: linear-gradient(rgba(0, 47, 75, 0.3), rgba(220, 66, 37, 0.3));
+    	width: 100vw;
+	    height: 100%;
+        overflow: auto;
+	}
+    .table-responsive {
+        margin-left: -3%;
+        height: 100%;
+        overflow: scroll;
+    }
+    .hovereffect {
+        width: 100%;
+    }
+    .hovereffect .overlay {
+        /*width: 77%;
+        height: 80%;*/
+        left: 7%;
+        /*top: 10%;*/
+    }
+    .hovereffect h2 {
+        font-size: 2em;
+        margin-top: 4%;
+        margin-left: 7%;
+    }
+    .hovereffect p {
+        font-size: 0.5em;
+    }
+}
+
+/* PHOTO WORK ____________________________________________________________________*/
+.cycle-overlay{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 156%;
+    letter-spacing: 0.5px;
+    text-transform: lowercase; 
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-bottom: 5%; 
+}
+.photo_work_image_cycle{
+	padding-top: 50px;
+    margin-left: 9%;
+    width: 82%;
+}
+.photo_work_image_cycle_color{
+	padding-top: 50px;
+    width: 100%;
+}
+
+/* PHOTO WORK MEDIA QUERIES_______________________________________________________*/
+@media(max-width:767px) {
+    .cycle-overlay{
+        font-size: 1em;
+        margin-left: 10%;
+    }
+    .photo_work_image_cycle_color{
+        width: 85%;
+    }
+}
+@media(max-width:400px) {
+    .cycle-overlay{
+        font-size: 1em;
+        margin-left: 10%;
+    }
+    .photo_work_image_cycle_color{
+        width: 85%;
+    }
+}
+
+/* CONTACT ____________________________________________________________________*/
+.contact_form_background {
+    padding-top: 50px;
+    background: linear-gradient(rgba(0, 47, 75, 0.3), rgba(220, 66, 37, 0.3));
+    width: 100vw;
+    height: 100vw;
+}
+.contact_about {
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 4px 5px rgba(183,155,149,1);
+    font-size: 3em;
+    color: rgb(71,64,74);
+    text-transform: lowercase;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+.contact_form_info {
+    margin-left: 30%;
+}
+.contact_form_info * {
+    text-transform: lowercase;
+    color: rgb(71,64,74);
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+.contact_input_box {
+    width: 65%;
+    color: #777;
+    font-weight: 100;
+}
+.form-group.row {
+    margin-bottom: 3%;
+}
+.col-form-label {
+    width: 75%;
+}
+.btn.btn-primary.contact_send_button {
+    padding: 1%;
+    margin-left: 20%;
+    border-radius: 7%;
+    border-color: rgb(183,155,149);
+    background-color: rgb(183,155,149);
+    margin-top: 2%;
+    font-weight: inherit;
+}
+
+/* CONTACT MEDIA QUERIES________________________________________________________*/
+.form-control:focus  {
+     border-color: #b9c2c8;
+}
+.form-control.contact_input_box {
+    font-family: 'Arimo', sans-serif;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  outline-color: #b9c2c8;
+}
+@media screen and (max-width:767px) {
+    .contact_about {
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 4px 5px rgba(183,155,149,1);
+    font-size: 41px;
+    padding: 5%;
+    color: rgb(71,64,74);
+    text-transform: lowercase;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+    }
+    .contact_form_info {
+    margin-left: 15%;
+    }
+    .contact_input_box {
+    width: 96%;
+    color: #777;
+    font-weight: 100;
+    }
+    .btn.btn-primary.contact_send_button {
+    width: 32%;
+    padding: 2%;
+    margin-left: 23%;
+    font-size: 96%;
+    border-radius: 7%;
+    border-color: rgb(183,155,149);
+    background-color: rgb(183,155,149);
+    margin-top: 2%;
+    font-weight: inherit;  
+    }
+    .contact_form_background {
+    padding-top: 50px;
+    background: linear-gradient(rgba(0, 47, 75, 0.3), rgba(220, 66, 37, 0.3));
+    width: 100vw;
+    height: 1000px;
+    }
+}
+@media screen and (max-width:400px) {
+    .contact_form_background {
+        height: 650px;
+    }
+    .contact_about {
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 4px 5px rgba(183,155,149,1);
+    font-size: 32px;
+    padding: 5%;
+    color: rgb(71,64,74);
+    text-transform: lowercase;
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-align: center;
+    }
+    .contact_form_info {
+    margin-left: 20%;
+    }
+    .contact_input_box {
+    width: 96%;
+    color: #777;
+    font-weight: 100;
+    }
+    .btn.btn-primary.contact_send_button {
+    padding: 2%;
+    margin-left: 15%;
+    border-radius: 7%;
+    border-color: rgb(183,155,149);
+    background-color: rgb(183,155,149);
+    margin-top: 2%;
+    font-weight: inherit;
+    width: 42%;
+    font-size: 79%;
+    }
+}
+
+/* RESUME ___________________________________________________________________*/
+.banner.resume {
+    margin-top: -0.4%;
+}
