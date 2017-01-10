@@ -1,0 +1,14 @@
+{
+	"mockt.co": {
+		"appShortDesc":"Mock Trail Competition web application and database",
+		"appLongDesc":"This application is used to record, track and consolidate results for mock trial competitions at both the high school and college level.", 
+		"technologies": "Technologies: HTML/DOM, CSS, Bootstrap, Javascript Jquery, Ajax, Ruby on Rails and Postgres.",
+		"href":"http://www.mockt.co/"
+	},
+	"bogus" : {
+		"appShortDesc":"Bogus project",
+		"appLongDesc":"This is a fake project.", 
+		"technologies": "Technologies: Deception and subterfuge.",
+		"href":"http://www.bogus.co/"
+	}
+}

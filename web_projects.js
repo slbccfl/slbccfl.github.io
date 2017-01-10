@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	$('.img-headshot').fadeIn(2000).animate({left: '20%'},2000,"swing",function() {
-		$('.about-region').fadeIn("slow");
-	});
 	$(".navbar").load("navbar.html", "html", function() {
 		$('.heaven-button').click(function() {
 			$('.img-headshot, .about-region').fadeOut(1000, function() {
