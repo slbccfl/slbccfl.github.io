@@ -52,6 +52,8 @@ td {
 .table>thead>tr>td, 
 .table>thead>tr>th {
     padding:0;
+    width: 50;
+    align: center;
 }
 
 .web_work_links {

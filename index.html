@@ -13,8 +13,38 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="navbar">
-	</div>
+	<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	    <div class="container">
+	        <div class="navbar-header" id="initials">
+	            <a class="navbar-brand" href="index.html">Steven<br>Barnes</a>
+	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	        </div>
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li>
+	                    <a href="#" class="about-button">About</a>
+	                </li>
+	                <li>
+	                    <a href="https://www.linkedin.com/in/steven-barnes-mba-pmp">LinkedIn</a>
+	                </li>
+	                <li>
+	                    <a href="web_projects.html" class="web_projects_button">Web Projects</a>
+	                </li>
+	                <li>
+	                    <a href="#" class="resume-button">Resume</a>
+	                </li>
+	                <li>
+	                    <a href="#" class="heaven-button">Heaven?</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
 	<div class="container broadwalk-background">
 	</div>
 	<div class="container heaven-background">
@@ -25,9 +55,6 @@
 		<h2 id="iowa">"No... it's Iowa..."</h2>
 		<p id="aboutreturn">(Press "About" to go to Florida... like I did!)</p>
 	</div>
-	<object class="resume-object" data="StevenBarnes2017-01.pdf" type="application/pdf">
-	   <p>This browser does not support PDFs. Please download the PDF to view it: <a href="StevenBarnes2017-01.pdf">Download Resume</a>.</p>
-	</object>
 	<div class="container main">
 		<div class="row main-row">
 			<div class="col-sm-4 main-cell">
@@ -37,7 +64,7 @@
 			<div class="col-sm-8 main-cell">
 				<div class="about-region">
 					<h3>Welcome to my portfolio page<br>I am Steve Barnes, MBA, PMP, Web Developer</h3>
-					<h4>I relocated to the Miami area in 2016 to attend the Ironhack Web Development Bootcamp. I am now available for freelance work and full-time employment opportunities. I offer these qualities:</h4> 
+					<h4>I relocated to the Miami area in 2016 to attend the Ironhack Web Development Bootcamp. I am now available for freelance work and full-time employment opportunities.<br>I offer the following capabilities:</h4> 
 					<ul>
 					<li>Goal-driven, compassionate, and accountable professional with many years of experience as a computer systems professional, familiar with all facets of software development.</li>
 					<li>Adaptable manager with positive attitude, excellent ability to find solutions, and accustomed to the demands of changing priorities under challenging deadlines.</li>
@@ -50,5 +77,8 @@
 			</div>
 		</div>
 	</div>
+    <div class="container resume-object">
+        <embed src="StevenBarnes2017-01.pdf"/>
+    </div>
 </body>
 </html>
