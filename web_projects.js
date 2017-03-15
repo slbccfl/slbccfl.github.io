@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".navbar").load("navbar.html", "html", function() {
+	$(".navbar").load("navbar.html", function() {
 		projectsText = localStorage.getItem("web_projects.json");
 		console.log(projectsText);
 		// projectsObject = JSON.parse(projectsText);
@@ -8,5 +8,3 @@ $(document).ready(function() {
 		// });
 	});
 });
-
-
