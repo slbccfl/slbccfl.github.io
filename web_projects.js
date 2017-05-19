@@ -9,11 +9,12 @@ $(document).ready(function() {
 
 			});
 			$.each(projectsArray.projects, function (i, project) {
-				console.log("project " + i + " assigned to var project");
-				console.log(project.appTitle);
-				console.log(project.appLongDesc);
-				// $(".web_projects_cell:nth-child(i) h2").replaceWith(project.appTitle);
-				// $(".web_projects_cell:nth-child(i) .web_work_about").replaceWith(project.appLongDesc);
+				console.log("project " + i + " assigned to project");
+				console.log(project.title);
+				console.log(project.longDesc);
+				$(".web_project_cell:nth-child(" + i + ") h2").html(project.title);
+				$(".web_project_cell:nth-child(" + i + ") .web_work_about").html(project.longDesc);
+				$(".web_project_cell:nth-child(" + i + ") img").attr("src", project.image);
 
 			});
 		});
